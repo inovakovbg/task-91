@@ -12,7 +12,7 @@ export default class Application extends EventEmitter {
 
 
 
-    this._beat = new Beat();
+    this._beat = Beat.events.BIT;
     this._create();
 
     this.emit(Application.events.READY);
